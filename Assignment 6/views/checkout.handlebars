@@ -1,0 +1,273 @@
+<main>
+    <div class="container wow fadeIn">
+
+        <!-- Heading -->
+        <h2 class="h2 text-center">
+            <i class="fas fa-utensils"></i>
+            <div id="dash_top">
+            </div>
+            <div id="eat_repeat">BigFOOD always in your Service</div>
+        </h2>
+        <!--Grid row-->
+        <div class="row">
+            <!--Grid column-->
+            <div class="col-md-8 mb-4">
+
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card content-->
+                    <form class="card-body needs-validation" action="/shipping" method="post" novalidate>
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-6 mb-2">
+
+                                <!--firstName-->
+                                <div class="md-form ">
+                                    <label for="firstName" class="">First name</label>
+                                    <input type="text" id="firstName" class="form-control" name="fname" placeholder="First name" required>
+                                    <div class="invalid-feedback">
+                                        Field Can't be left empty.
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-6 mb-2">
+
+                                <!--lastName-->
+                                <div class="md-form">
+                                    <label for="lastName" class="">Last name</label>
+                                    <input type="text" id="lastName" class="form-control" name="lname" placeholder="last Name" required>
+                                    <div class="invalid-feedback">
+                                        Field Can't be left empty.
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+                        <!--Grid row-->
+                        <!--email-->
+                        <div class="md-form mb-2">
+                            <label for="email" class="">Email</label>
+
+                            <input type="text" id="text" class="form-control" placeholder="username@example.com"
+                                name="email" required>
+                            <div class="invalid-feedback">
+                                Field Can't be left empty.
+                            </div>
+                        </div>
+
+                        <hr>
+                        <!--address-->
+                        <div class="md-form mb-3 mt-2">
+                            <label for="address" class="">Address</label>
+
+                            <input type="text" id="address" class="form-control" placeholder="Address" name="address"
+                                required>
+                            <div class="invalid-feedback">
+                                Field Can't be left empty.
+                            </div>
+                        </div>
+
+                        <!--Grid row-->
+                        <div class="row">
+
+
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <!--Grid column-->
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <label for="zip">Zip Code</label>
+                                <input type="text" class="form-control" id="zip" placeholder="A1A 2A1" name="zip" required>
+                                <div class="invalid-feedback">
+                                    Field Can't be left empty.
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <label for="country">Province</label>
+                                <select class="custom-select d-block w-100" id="Province" name="province" required>
+                                    <option value="">Choose..</option>
+                                    <option>Ontario</option>
+                                    <option>British Columbia</option>
+                                    <option>Alberta</option>
+                                    <option>Quebec</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Field Can't be left empty.
+                                </div>
+                            </div>
+                            <!--Grid column-->
+                            <!--Grid column-->
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <label for="country">Country</label>
+                                <select class="custom-select d-block w-100" id="country" name="country" required>
+                                    <option value="">Choose..</option>
+                                    <option>United States</option>
+                                    <option>Canada</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Field Can't be left empty.
+                                </div>
+                            </div>
+                            <!--Grid column-->
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <label for="City" class="">City</label>
+                                <input type="text" id="City" class="form-control" placeholder="City" name="city"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Field Can't be left empty.
+                                </div>
+                            </div>
+
+                            <div class="invalid-feedback">
+                                Field Can't be left empty.
+                            </div>
+                        </div>
+                        <!--Grid row-->
+
+
+
+
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="cc-name">Name on card</label>
+                                <input type="text" class="form-control" id="cc-name" placeholder="Ex- Michelle Jackson" name="cname"
+                                    required>
+                                <small class="text-muted">Full name as displayed on card</small>
+                                <div class="invalid-feedback">
+                                    Field Can't be left empty.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="cc-number">Credit card number</label>
+                                <input type="text" class="form-control" id="cc-number" placeholder="1234 1234 1234 1234" name="cnumber"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Field Can't be left empty.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <label for="cc-expiration">Expiration</label>
+
+                                <input type="text" class="form-control" id="cc-expiration" placeholder="MM/YY" name="cexpiry"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Field Can't be left empty.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="cc-expiration">CVV</label>
+                                <input type="text" class="form-control" id="cc-cvv" placeholder="123" name="cvv" required>
+                                <div class="invalid-feedback">
+                                    Field Can't be left empty.
+                                </div>
+                            </div>
+
+                        </div>
+                        <hr class="mb-4">
+                        <button class="btn btn-secondary btn-lg" style="width: 100%;" type="submit">Continue to
+                            Shipping</button>
+
+                </div>
+                <!--/.Card-->
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-4 mb-4">
+                <!-- Heading -->
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-muted">Your cart</span>
+                    <span class="badge badge-secondary badge-pill">{{totalquantity}}</span>
+                </h4>
+                <!-- Cart -->
+              <a href="/package"><span class="text-muted list-group mb-2 ">Add more meals</span></a> 
+                {{#each yo}}
+                <ul class="list-group mb-3 z-depth-1">
+                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <div>
+                            <h6 class="my-0">{{this.name}} ({{this.meals}} Meals) * {{this.quantity}}</h6>
+                            <small class="text-muted">{{this.category}}/{{this.synopsis}}</small>
+                        </div>
+                        <span class="text-muted">${{this.total}}</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Total</span>
+                        <strong>${{this.total}}</strong>
+                    </li>
+                </ul>
+                {{/each}}
+                 <li class="list-group-item d-flex justify-content-between">
+                        <span>Grand Total</span>
+                        <strong style="color: red;">${{grand}}</strong>
+                    </li>
+               <input type="text" name="total" style="display: none;" value="{{grand}}" name="" id="">
+                 <input type="text" name="packages" style="display: none;" value="{{nametotal}}" name="" id="">
+
+            </div>
+            <!--Grid column-->
+            </form>
+        </div>
+        <!--Grid row-->
+
+    </div>
+</main>
+<!--Main layout-->
+
+<!--Footer-->
+
+<style>
+    .text-center>i {
+        margin-top: 10px;
+        color: green;
+        font-size: 25px;
+        text-align: left;
+    }
+
+    form {
+        box-shadow: 1 !important;
+    }
+</style>
+<script>
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>

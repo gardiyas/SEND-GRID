@@ -1,0 +1,51 @@
+<main>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="image/meal4.jpg" alt="logasss" />    
+  
+    <div id="package">
+        {{#each package}}
+        <div>
+            <img src="{{this.url}}" alt="{{this.alt}}">
+            <p id="packCaption"><a href="/mealdetail/{{this.caption}}"> {{this.caption}}</a> </p>
+            <p id="packDes"> {{this.des}}</p>
+            <p id="packMeal">(Includes {{this.meal}} meals)</p>
+            <p id="packSyn">{{this.Synopsis}}</p>
+            <p id="packPrice">Starts from ${{this.price}}</p>
+            
+        </div>
+        {{/each}}
+
+    </div>
+</main>
+<style>
+    #package {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-rows: auto;
+    }
+    a{
+        color: #000000B0;
+    }
+    a:hover {
+    color: rgba(29, 153, 202, 0.966);
+    transition-duration: 0.25s;
+}
+    @media screen and (min-width: 375px) {
+        #package {
+            margin-left: 100px;
+        }
+    }
+    #packCaption{
+        margin-left: 20px;
+        color: black;
+    }
+        @media screen and (min-width: 768px) {
+        #packCaption {
+            margin-left: 30px;
+        }
+    }
+</style>
+<script src="../controller/alterMeal.js"></script>

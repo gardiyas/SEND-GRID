@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/347a9e55b8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">    
+    <!--Bootstrap Stylesheet imported-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{head}}</title>
+</head>
+
+<body>
+    <header>
+        <p class="header"><span id="">{{loggeduser}}</span>Welcome to best Taste in BigFOOD</p> 
+        <nav class="navbar">
+            
+            <a href="/" class="logo"><i id="knife" class="fas fa-utensils"></i> BigFood</a>
+
+            <ul class="main-nav" id="js-menu" style="margin-right: 10px;">
+                <li>
+                    <a href="/" class="nav-links">Home</a>
+                </li>
+                <li>
+                    <a href="/#chef" class="nav-links">Onthemenu</a>
+                </li>
+
+                <li>
+                    <a href="/package" class="nav-links">Pricing</a>
+                </li>
+
+
+                <li id="left">
+                    <a href="#footertext" class="nav-links">Contact us</a>
+                </li>
+                {{#if alter}}
+                <li>
+                    <a href="/alter" class="nav-links">{{alter}}</a>
+                </li>
+                {{/if}}
+        
+                <li>
+                    <a href="/login" class="nav-links">Login</a>
+                </li>
+
+                <li>
+                    <a href="/logout" class="nav-links">Logout</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    {{{body}}}    
+
+    <footer>
+
+        <div class="footer">
+    <div class="footer-banner">
+      <div class="footer-text">
+        <h3>BigFOOD</h3>
+        <p>BigFood Restaurant</p>
+      </div>
+
+      <div class="footer-titles">
+        <ul>
+          <li><a href="#">Get Help</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Social Media</a></li>
+        </ul>
+      </div>
+      <p class="inc-rights">Copyright © Winter 2021, Emre Isik, WEB322NCC</p>
+    </div>
+  </div>
+    </footer>
+
+
+
+</body>
+
+<style>
+    .footer {
+  display: inline-block;
+  width: 100%;
+  text-align: cen           ter;
+  background-image: url(image/footer.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 45px 0;
+  margin-top: 35px;
+}
+
+.footer-banner {
+  margin: 0 60px;
+}
+
+.footer-text {
+  padding: 5px 0;
+}
+
+.footer-text h3 {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.footer-text p {
+  font-size: 16px;
+  line-height: 22px;
+  color: white;
+}
+
+footer-titles {
+  padding: 15px 0;
+}
+
+.footer-titles ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.footer-titles ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #d2ac47;
+}
+</style>
+
+</html>

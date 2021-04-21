@@ -1,0 +1,140 @@
+<div class="container" id="firstrow">
+    <div class="row">
+        <div class="col-md-6 col-sm-12" >
+            <img src="../{{image}}" class="img-fluid" alt="Responsive image">
+            <div id="category">
+                Category: {{category}}
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12" id="product-content">
+            <h2 class="title">{{name}}</h2>
+            <h6 style="color:rgba(0, 0, 0, 0.568)">{{synopsis}}</h6>
+            <div class="price">
+                ${{price}}
+              
+            </div>
+            <p id="detailmeals">You will have a total of <b>{{meals}}</b> meals in this package.</p>
+            {{!-- <form action="/checkout" method="post"> --}}
+              <form action="/checkout" method="POST">
+                <div>
+                    <button type="button" id="minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        class="minus decrease btn btn-outline-danger">-</button>
+                     <input class="quantityy" min="0" name="quantity" value="1" type="number" id="quantityyy">
+
+                    <input  name="name" value="{{name}}" style="display: none;">
+                     <button  type="button" id="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        class="plus increase btn btn-outline-danger">+</button>
+                    <button type="submit" class="btn btn-primary" data-toggle="button" aria-pressed="false"
+                        autocomplete="off">
+                        Add to cart
+                        {{!-- <a href="/checkout/{{name}}" style="color: white;" > </a> --}}
+                    </button>
+                </div>
+                </form>
+            {{!-- </form> --}}
+              <div id="des">
+                    {{desc}}
+              </div>
+    </div>
+
+</div>
+</div>
+
+<script>
+</script>
+
+<script src="../model/script2.js"></script>
+<style>
+     form {
+        box-shadow: 0 0 0 !important;
+    }
+    #firstrow {
+        margin-top: 30px;
+    }
+
+    #minus,
+    #plus {
+        width: 50px;
+       
+    }
+    .btn-outline-danger {
+    color: #dc3545;
+    border-color: #dc354648;
+}
+    #product-content>h2 {
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.541);
+
+    }
+
+    .price {
+        color: rgb(168, 38, 88);
+        font-size: larger;
+        font-family: cursive;
+        margin: 20px 0px;
+
+    }
+
+    input {
+        text-align: center;
+    }
+
+    #detailmeals {
+        font-size: 18px;
+        margin: 20px 0px;
+        background-color: bisque;
+
+    }
+
+    .quantityy {
+        width: 40px;
+        height: 35x;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    #des{
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    #category{
+        text-align: center;
+        margin-top: 15px;
+       font-weight: 500;
+       font-family: cursive;
+          letter-spacing: 2px;
+       cursor: pointer;
+       transition: 0.25s;
+    }
+    #category:hover{
+        color: rgb(0, 153, 255);
+       letter-spacing: 0px;
+ transition-timing-function: ease;
+     }
+
+      @media screen and (max-width: 767px) {
+      #product-content{
+          margin-top: 30px;
+        text-align: center;
+        font-size: smaller;
+    }
+    }
+    
+    
+</style>
+
+
+{{!-- 
+<p>{{name}}</p>
+<p>{{price}}</p>
+<p>{{desc}}</p>
+<p>{{synopsis}}</p>
+<p>{{category}}</p>
+<p>{{meals}}</p>
+<p> <img src="{{image}}" alt=""></p> --}}

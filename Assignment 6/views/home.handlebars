@@ -1,0 +1,132 @@
+<main>
+     <div class="slider">
+    <img src="image/slider.jpg" alt="slider image" />
+    <div class="slider-text">
+      <h1>
+        Try BigFood With Quality Kit
+      </h1>
+      <p style="text-align: center;">Get 1 BigFood delicious Kit, and delivered for FREE to your doorstep.</p>
+      <a href="#">Explore</a>
+    </div>  
+  </div>
+
+  <div class="heading">
+        <h2>Top 3 BigFood</h2>
+      </div>
+  <div class="looter">
+      <img src="image/meal1.jpg" alt="plate1" id="image1">
+      <div class="heading">
+        <p>Chicken & Turkey Thigts with Pickled Cranberries </p>        
+      </div> 
+      <div class="diffor">
+          <p>Candied yams & Pomegranate kale salad with spiced pecans</p>
+      </div> 
+      <div class="dropss">
+          <button class="button" id="set-a" style="text-align: right"><a href="">$49.99</a></button>
+        </div>
+  </div>
+  
+  <div class="looter">
+    <img src="image/meal2.jpg" alt="plate2" id="imag21">
+    <div class="heading">
+        <p>Grilled and Sous Vide With Turkey</p>        
+      </div>
+      <div class="diffor">
+          <p>Cuban Sandwich & Salads with Mashed Potato Croquettes</p>
+      </div> 
+      <div class="dropss">
+          <button class="button" id="set-a" style="text-align: right"><a href="">$39.99</a></button>
+        </div>
+  </div>  
+  <div class="looter">
+    <img src="image/meal3.jpg" alt="pla3e2" id="imag23">
+    <div class="heading" style="left:">
+        <p>Balsamic and honey roast Chicken,</p>        
+      </div>
+      <div class="diffor">
+          <p>Mashed Potatoes & Cranberry Sauce with Yam Sides</p>
+      </div> 
+      <div class="dropss">
+          <button class="button" id="set-a" style="text-align: right"><a href="">$69.99</a></button>
+        </div>
+  </div>  
+
+  <h1 class="contentsectionheader">We respect your <span style="color: darkred; font-size: 50px;"> convenience
+        </span> and <span style="color: darkred; font-size: 50px;">budget</span></h1>
+
+    <div id="row">
+        <div id="product">
+            <img src="image/img1.jpg" alt="card">
+            <p id="pes">We have speacial coupons</p>
+            <p id="data1">Bigfood Menu kit provides free breakfast coupon.</p>
+        </div>
+        <div id="product">
+            <img src="image/img2.jpg" alt="card">
+            <p id="pes">Deliveries sends safely with safe Temperature. </p>
+            <p id="data1"> The food should be delivered as quickly as possible-ideally, overnight.</p>
+        </div>
+        <div id="product">
+            <img src="image/img3.jpg" alt="card">
+            <p id="pes">You Choose your best preference for BigFood Menu</p>
+            <p id="data1">We offer free food for a week. Isn't it satisfying?</p>
+        </div>        
+    </div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>You will always love BIGFOOD</h1>
+            <h2 style="color: black;">What are you waiting for?</h2>
+            <span>
+                <h2 class="h2">Order now</h2>
+            </span>
+            <a class="button" style="width: 90px; z-index=3 " href="#chef "> Order </a>
+
+        </div>
+    </div> 
+
+    
+
+    <div class="topmeal">
+        <div class="mealtext" style="font-size: 45px;">
+            <div class="taste">BigFOOD is the best FOOD</div>
+            <p id="health_not_compro">But health is not compromised either!</p>
+        </div>
+    </div>
+    
+
+    <div id="chef">Our Kitchen is up with these dishes right now!</div>
+    <div id="chef2">You would love to explore our kitchen</div>
+    <div id="row2">
+        {{#each services}}
+        <div>
+            <img src="{{this.url}}" alt="{{this.alt}}">
+            <p> {{this.caption}}</p>
+            <p> {{this.price}}</p>
+        </div>
+        {{/each}}
+    </div>
+
+
+    </p>
+    <!-- Top meal -->
+    <style>
+        #package {
+            grid-template-columns: auto auto;
+            justify-content: center;
+            align-items: center;
+        }
+         #packCaption> a{
+        color: #000000B0;
+    }
+   #packCaption> a:hover {
+    color: rgba(29, 153, 202, 0.966);
+    transition-duration: 0.25s;
+}
+    </style>
+</main>
